@@ -1,7 +1,11 @@
 <template>
     <div class="form-container">
         <div class="form-login-wrapper">
-            <img src="../assets/logo-utfpr.png" alt="logo" class="logo-utfpr" />
+            <img
+                src="../assets/logo-utfpr.png"
+                alt="logo-utfpr"
+                class="logo-utfpr"
+            />
             <br />
             <br />
             <b-form>

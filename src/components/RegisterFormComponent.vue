@@ -136,10 +136,10 @@ export default {
     outline: none;
     color: #444;
 }
-.register-input-date {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.b-form-btn-label-control.form-control > .form-control {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 .register-button {
     padding: 5px 20px;

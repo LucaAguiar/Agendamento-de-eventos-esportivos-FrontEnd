@@ -25,4 +25,9 @@ nav a {
 nav a.router-link-exact-active {
     color: #42b983;
 }
+
+.b-form-btn-label-control.form-control > .form-control {
+    display: flex;
+    align-items: center;
+}
 </style>
