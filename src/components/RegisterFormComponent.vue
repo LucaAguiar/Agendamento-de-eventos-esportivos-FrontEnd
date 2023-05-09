@@ -136,11 +136,6 @@ export default {
     outline: none;
     color: #444;
 }
-.b-form-btn-label-control.form-control > .form-control {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
 .register-button {
     padding: 5px 20px;
     font-weight: 600;
