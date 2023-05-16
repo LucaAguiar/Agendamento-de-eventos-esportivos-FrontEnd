@@ -28,4 +28,10 @@ export default {
         rgba(255, 255, 255, 1) 70%
     );
 }
+
+@media (max-width: 820px) {
+    .login-view-container {
+        justify-content: center;
+    }
+}
 </style>

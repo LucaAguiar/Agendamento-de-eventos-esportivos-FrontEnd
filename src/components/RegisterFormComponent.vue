@@ -1,7 +1,7 @@
 <template>
     <div class="form-container">
         <div class="form-register-wrapper">
-            <h2 style="font-weight: bold">Criar conta</h2>
+            <h2 class="form-register-password-title">Cadastrar</h2>
             <div class="register-back-button-container">
                 <p class="register-back-button" @click="backToLoginPage()">
                     <b-icon-arrow-left-short />Voltar
@@ -55,7 +55,7 @@
                     type="submit"
                     variant="warning"
                     class="register-button"
-                    >Criar conta</b-button
+                    >Cadastrar</b-button
                 >
             </b-form>
         </div>
@@ -89,7 +89,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
+    width: 100%;
     max-width: 460px;
     padding: 10px 5px;
 }
@@ -97,6 +97,9 @@ export default {
     align-items: center;
     padding: 12px;
     margin-bottom: 20px;
+}
+.form-register-password-title {
+    font-weight: bold;
 }
 .register-back-button-container {
     display: flex;
