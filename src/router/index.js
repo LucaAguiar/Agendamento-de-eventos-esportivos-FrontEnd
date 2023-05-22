@@ -2,7 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
+import RegisterMessageView from "../views/RegisterMessageView.vue";
 import RecoverPasswordView from "../views/RecoverPasswordView.vue";
+import RecoverMessageView from "../views/RecoverMessageView.vue";
+import UserAreaView from "../views/UserAreaView.vue";
 
 Vue.use(VueRouter);
 
@@ -16,8 +19,20 @@ const routes = [
         component: RegisterView,
     },
     {
+        path: "/register-message",
+        component: RegisterMessageView,
+    },
+    {
         path: "/recover",
         component: RecoverPasswordView,
+    },
+    {
+        path: "/recover-message",
+        component: RecoverMessageView,
+    },
+    {
+        path: "/user",
+        component: UserAreaView,
     },
 ];
 

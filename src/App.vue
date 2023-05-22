@@ -6,11 +6,21 @@
 
 <style>
 #app {
+    display: flex;
+    width: 100%;
+    height: 100vh;
     font-family: system-ui;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 217, 53, 1) 5%,
+        rgba(255, 242, 61, 1) 30%,
+        rgba(255, 255, 255, 1) 70%
+    );
+    padding: 10px;
 }
 
 nav {

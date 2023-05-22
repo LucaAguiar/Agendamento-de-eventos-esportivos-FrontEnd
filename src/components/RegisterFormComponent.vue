@@ -55,6 +55,7 @@
                     type="submit"
                     variant="warning"
                     class="register-button"
+                    @click="redirectMessagePage()"
                     >Cadastrar</b-button
                 >
             </b-form>
@@ -79,6 +80,9 @@ export default {
     methods: {
         backToLoginPage: function () {
             return this.$router.push("/");
+        },
+        redirectMessagePage: function () {
+            this.$router.push("/register-message");
         },
     },
 };

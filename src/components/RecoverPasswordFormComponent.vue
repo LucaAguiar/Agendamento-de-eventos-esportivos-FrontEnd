@@ -24,7 +24,6 @@
                         v-model="form.email"
                         type="email"
                         placeholder="E-mail"
-                        required
                     ></b-form-input>
                 </div>
                 <div class="recover-password-button-container">
@@ -32,6 +31,7 @@
                         type="submit"
                         variant="warning"
                         class="recover-password-button"
+                        @click="redirectMessagePage()"
                     >
                         Enviar</b-button
                     >
@@ -52,8 +52,11 @@ export default {
         };
     },
     methods: {
-        redirectRegisterPage: function name() {
+        redirectRegisterPage: function () {
             this.$router.push("/register");
+        },
+        redirectMessagePage: function () {
+            this.$router.push("/recover-message");
         },
         backToLoginPage: function () {
             return this.$router.push("/");

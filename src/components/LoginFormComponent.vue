@@ -16,7 +16,6 @@
                         v-model="form.email"
                         type="email"
                         placeholder="E-mail"
-                        required
                     ></b-form-input>
                 </div>
                 <div class="login-wrapper-input-password">
@@ -25,12 +24,15 @@
                         class="login-input"
                         v-model="form.password"
                         placeholder="Senha"
-                        required
                         type="password"
                     ></b-form-input>
                 </div>
 
-                <b-button type="submit" variant="warning" class="login-button"
+                <b-button
+                    type="submit"
+                    variant="warning"
+                    class="login-button"
+                    @click="redirectUserArea()"
                     >Login</b-button
                 >
             </b-form>
@@ -60,11 +62,14 @@ export default {
         };
     },
     methods: {
-        redirectRegisterPage: function name() {
+        redirectRegisterPage: function () {
             this.$router.push("/register");
         },
-        redirectRecoverPasswordPage: function name() {
+        redirectRecoverPasswordPage: function () {
             this.$router.push("/recover");
+        },
+        redirectUserArea: function () {
+            this.$router.push("/user");
         },
     },
 };
