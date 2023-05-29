@@ -2,7 +2,7 @@
     <div class="user-area-container">
         <div class="user-area-wrapper">
             <div class="user-back-button-container">
-                <p class="user-back-button" @click="backToLoginPage()">
+                <p class="user-back-button" @click="backToMenu()">
                     <b-icon-arrow-left-short />Voltar
                 </p>
             </div>
@@ -111,8 +111,8 @@ export default {
         clickUpdatePassword: function () {
             this.updatePassword = !this.updatePassword;
         },
-        backToLoginPage: function () {
-            return this.$router.push("/");
+        backToMenu: function () {
+            return this.$router.push("/menu");
         },
     },
 };

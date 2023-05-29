@@ -32,7 +32,7 @@
                     type="submit"
                     variant="warning"
                     class="login-button"
-                    @click="redirectUserArea()"
+                    @click="redirectToMenu()"
                     >Login</b-button
                 >
             </b-form>
@@ -68,8 +68,8 @@ export default {
         redirectRecoverPasswordPage: function () {
             this.$router.push("/recover");
         },
-        redirectUserArea: function () {
-            this.$router.push("/user");
+        redirectToMenu: function () {
+            this.$router.push("/menu");
         },
     },
 };

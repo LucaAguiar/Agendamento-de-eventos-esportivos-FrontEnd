@@ -21,6 +21,7 @@
         rgba(255, 255, 255, 1) 70%
     );
     padding: 10px;
+    overflow-y: hidden;
 }
 
 nav {
