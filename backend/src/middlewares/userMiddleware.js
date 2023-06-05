@@ -1,12 +1,20 @@
 const validateUser = (req, res, next) => {
     const {body} = req;
 
-    if (body.user == undefined || body.user == ''){
-        return res.status(400).json({ message: "O campo 'user' é obrigatório" });
+    if (body.nome == undefined || body.nome == ''){
+        return res.status(400).json({ message: "O campo 'nome' é obrigatório" });
     }
 
-    if (body.password == undefined || body.password == ''){
-        return res.status(400).json({ message: "O campo 'password' é obrigatório" });
+    if (body.email == undefined || body.email == ''){
+        return res.status(400).json({ message: "O campo 'email' é obrigatório" });
+    }
+
+    if (body.senha == undefined || body.senha == ''){
+        return res.status(400).json({ message: "O campo 'senha' é obrigatório" });
+    }
+
+    if (body.dataNascimento == undefined || body.dataNascimento == ''){
+        return res.status(400).json({ message: "O campo 'dataNascimento' é obrigatório" });
     }
 
     next();

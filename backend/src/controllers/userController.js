@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
-    await userModel.deleteUser(req.params.iduser);
+    await userModel.deleteUser(req.params.idusuario);
 
     return res.status(204).json();
 };

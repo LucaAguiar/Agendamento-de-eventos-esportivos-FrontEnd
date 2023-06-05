@@ -8,10 +8,10 @@ const getUsers = async () => {
 };
 
 const createUser = async (userCreate) => {
-    const {user, password} = userCreate;
-    const dateUTC = new Date(Date.now()).toUTCString();
+    const {nome, email, senha, dataNascimento} = userCreate;
+    const dateUTC = new Date(Date.now());
 
-    const createUser = await connection.query('INSERT INTO USUARIO (USUARIO, SENHA, DATACADASTRO) VALUES ($1, $2, $3) RETURNING *', [user, password, dateUTC]);
+    const createUser = await connection.query('INSERT INTO USUARIO(NOME, EMAIL, SENHA, DATANASCIMENTO, DATACADASTRO) VALUES ($1, $2, $3, $4, $5) RETURNING *', [nome, email, senha, dataNascimento, dateUTC]);
 
     return createUser;
 };
